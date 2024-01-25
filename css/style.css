@@ -1,0 +1,740 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    width: 100%; height: 100vh; padding: 10vh 10vw;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: space-around;
+    font-size: 3vmin;
+    overflow: hidden;
+    position: relative;
+  }
+
+  h1 { font-size: 15vmin; }
+  
+  .story { font-size: 4vmin; }
+  
+
+  
+  /* Navigation */
+  
+  nav {
+    position: fixed;
+    top:2vmin; right: 2vmin;
+    font-family: 'Cormorant Upright', serif;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav a {
+    display: block; 
+    width: 3vmin; 
+    height: 3vmin; 
+    margin-bottom: 2vmin;
+    background-color: rgba(255, 255, 255, 0.2);
+    border:3px solid lightcyan; border-radius: 50%;
+    font-size: 4vmin; 
+    text-align: center; 
+    line-height: 5vmin;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    width: 4vmin;
+    height: 4vmin; 
+  }
+  
+  nav .selected { background: rgba(255, 231, 127, 0.5); width: 4vmin; height: 4vmin; border: 3px solid #ffdc3e }
+  
+
+
+  /* Header */
+  
+  #header {
+    background-color: transparent;
+    background-blend-mode: multiply; background-size:cover;
+    color: #fff;
+    font-family: 'Cormorant Upright', serif;
+  }
+  
+  #title-half {
+    border: none;
+    margin: 0vmin 84vmin -41vmin 0vmin;
+    text-align: center;
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 600;
+    width: 683px;
+  }
+
+  #The {
+    display: inline-block;
+    border: none;
+    vertical-align: bottom;
+    font-size: 12vmin;
+  }
+
+  #Little {
+    display: inline-block;
+    border: none;
+    vertical-align: middle;
+    margin: 0vmin -2vmin -2.5vmin 2vmin;
+    font-size: 20vmin;
+  }
+
+  #header h1 {
+    font-family: 'Cormorant Upright', serif; 
+    font-size: 20vmin;
+    margin: 0vmin 78vmin -72vmin 0vmin;
+  }
+  
+  #header .row {
+    display: flex; justify-content: space-around;
+    width: 100%;
+  }
+
+  #logo {
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    width: 8vmin;
+  }
+
+  #small-fish {
+    width: 7vmin;
+    bottom: 12vh;
+    left: 0;
+    animation: fish-swim-3 50s linear infinite;
+  }
+
+  @keyframes fish-swim-3 {
+    0% {transform: translateX(-60vw);
+    opacity: 100%;}
+    20% {opacity: 50%;}
+    40% {opacity: 80%;}
+    60% {opacity: 30%;}
+    80% {opacity: 80%}
+    100% {transform: translateX(100vw);
+    opacity: 100%}
+  }
+
+  #tiny-fish {
+    width: 5vmin;
+    bottom: 11vh;
+    left: 0;
+    animation: fish-swim-4 45s linear infinite;
+  }
+
+  @keyframes fish-swim-4 {
+    0% {transform: translateX(-60vw);
+    opacity: 100%;}
+    20% {opacity: 50%;}
+    40% {opacity: 80%;}
+    60% {opacity: 30%;}
+    80% {opacity: 80%}
+    100% {transform: translateX(100vw);
+    opacity: 100%}
+  }
+
+  #coral {
+    width: 560px;
+    position: absolute;
+    right: 0vw;
+    bottom: 0vh;
+  }
+
+  #clam {
+    width: 200px;
+    position: absolute;
+    right: 10vw;
+    bottom: 15vh;
+  }
+
+  #music-button {
+    height: 190px;
+    width: 200px;
+    position: absolute;
+    right: 10vw;
+    bottom: 38vh;
+    z-index: 2;
+  }
+
+  #music-notes {
+      transform-origin: center center;
+  }
+
+  #music-notes path {
+      fill: transparent;
+      animation-play-state: paused; /* initially no animation */
+  }
+
+  #treble-clef{
+      animation: music-1 2s ease-in-out 0s infinite alternate none;
+  }
+
+
+  @keyframes music-1{
+      100% {
+          opacity: 0;
+          transform:  scale(1);
+      }
+      0% {
+          opacity: 1;
+      }
+  }
+
+  #minim{
+      animation: music-2 3s ease-in-out 0s infinite alternate none;
+  }
+
+
+  @keyframes music-2{
+      100% {
+          opacity: 0;
+          transform:  scale(1);
+      }
+      0% {
+          opacity: 1;
+      }
+  }
+
+  #crotchet{
+      animation: music-3 2s ease-in-out 0s infinite alternate none;
+  }
+
+
+  @keyframes music-3{
+      100% {
+          opacity: 0;
+          transform:  scale(1);
+      }
+      0% {
+          opacity: 1;
+      }
+  }
+
+  #quaver{
+      animation: music-4 4s ease-in-out 0s infinite alternate none;
+  }
+
+
+  @keyframes music-4{
+      100% {
+          opacity: 0;
+          transform:  scale(1);
+      }
+      0% {
+          opacity: 1;
+      }
+  }
+
+  #double-quaver{
+      animation: music-5 3s ease-in-out 0s infinite alternate none;
+  }
+
+
+  @keyframes music-5{
+      100% {
+          opacity: 0;
+          transform:  scale(1);
+      }
+      0% {
+          opacity: 1;
+      }
+  }
+
+
+  #header-mermaid {
+    width: 408px;
+    position: absolute;
+    bottom: 15vw;
+    right: 18vw;
+  }
+
+  #about {
+    text-decoration: none;
+    background-color: #fff;
+    color: #036;
+    font-size: 2.5vmin;
+    border-radius: 60px;
+    padding: 5px 18px;
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 750;
+    border: none;
+    transition: 0.5s;
+    position: absolute;
+    left:6vw; top:3vh;
+  }
+  
+  #about:hover {
+    background-color: #036;
+    border: 0.5px solid #fff;
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  #header #particles-js {
+    position: absolute;
+    background-image: url("underwater.png");
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+  }
+  
+
+  
+/* Scene One */
+  
+#sceneone {
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+  font-family: "Cormorant Upright", serif;
+  background-image: linear-gradient(#0a1148, #0A1828);
+  background-size: 100% 100%;
+  width: auto;
+  height: 100%;
+}
+
+  #sceneone-moon {
+    position: absolute;
+    top: 10vh;
+    left: 7vw;
+    width: 18vmin;
+  }
+
+  #ocean {
+    position: absolute;
+    bottom: 1vh;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(#6270EB, transparent);
+  }
+
+  #sceneone-mermaid {
+    position: absolute;
+    width: 68vmin;
+    left: 2vw;
+    bottom: -3vh;
+  }
+
+  #sceneone-ship {
+    position: absolute;
+    width: 73vmin;
+    right: 10vw;
+    top: -5vh;
+  }
+
+  #sceneone-water {
+    position: absolute;
+    width: 43vmin;
+    right: 17vw;
+    bottom: 36vh;
+  }
+
+  #sceneone-prince {
+    position: absolute;
+    animation: float 3s ease-in-out 0s infinite normal none;
+    width: 45vmin;
+    top: 1vh;
+  }
+  
+
+  @keyframes float{
+    0% {
+        transform:  translate(0px, 0px);
+    }
+    50% {
+        transform:  translate(0px, 8px);
+    }
+    100% {
+        transform:  translate(0px, 0px);
+    }
+}
+
+#sceneone-card {
+  width: 45vw;
+  height: 24vh;
+  background: #fffae2;
+  border-radius: 10px;
+  text-align: left;
+  color: black;
+  font-size: 2.4vmin;
+  font-weight: 500;
+  margin: auto;
+  padding: 2vw;
+  position: absolute;
+  right: 5vw;
+  bottom: 7vh;
+  z-index: 2;
+}
+
+#fireworks-container {
+  position: relative;
+  top: -25vh;
+  height: 50vh;
+  width: 100%;
+}
+  
+#sceneone #anim1, #sceneone #anim2 {
+    position: absolute;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    height: 80vh;
+  }
+  
+#sceneone #anim1 {
+    transform: translateX(-20vw);
+  }
+  
+#sceneone #anim2 {
+    transform: translateX(100vw);
+    animation: anim2 1s ease-out 1 forwards paused;
+}
+  
+@keyframes anim2 {
+    0% { transform: translateX(50vw) }
+    100% { transform: translateX(10vw) }
+}
+  
+  
+
+/*  Scene Two */
+  
+#scenetwo {
+    background-color: transparent;
+    background-blend-mode: multiply; background-size:cover;
+    color: #fff;
+    font-family: 'Cormorant Upright', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#scenetwo-card {
+  width: 25vw;
+  height: 46vh;
+  background: #fffae2;
+  border-radius: 10px;
+  text-align: left;
+  color: black;
+  font-size: 2.4vmin;
+  font-weight: 500;
+  margin: auto;
+  padding: 2vw;
+  position: absolute;
+  left: 5vw;
+  bottom: 9vh
+}
+
+#scenetwo #particles-js2 {
+  height:100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(#0A1828, black);
+  z-index: -1;
+}
+
+#scenetwo-mermaid {
+  position: absolute;
+  right: 20vw;
+  width: 57vmin;
+
+}
+
+#scenetwo-voice {
+  position: absolute;
+  width: 9vmin;
+  right: 37vw;
+  top: 20vh;
+}
+
+
+/* Scene Three */
+
+#scenethree {
+    background-image: url(beachv3.png);
+    background-blend-mode: overlay, normal;
+    color: #fff;
+    font-family: 'Cormorant Upright', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: auto;
+    background-size: 100% 100%;
+  }
+
+  #scenethree-card {
+    width: 38vw;
+    height: 16vh;
+    background: #fffae2;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+    border-radius: 10px;
+    text-align: left;
+    color: black;
+    font-size: 2.4vmin;
+    font-weight: 500;
+    margin: auto;
+    padding: 1.5vw;
+    position: absolute;
+    right: 7vw;
+    bottom: 77vh;
+  }
+
+  #scenethree-mermaid {
+    position: absolute;
+    left: 5vw;
+    bottom: 2vh;
+    width: 58vmin;
+  }
+
+  #scenethree-couple {
+    position: absolute;
+    right: 30vw;
+    width: 44vmin;
+  }
+  
+  #scenethree #anim1, #scenethree #anim2 {
+    position: absolute;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    height: 80vh;
+  }
+  
+  #scenethree #anim1 {
+    transform: translateX(-20vw);
+  }
+  
+  #scenethree #anim2 {
+    transform: translateX(100vw);
+    animation: anim2 1s ease-out 1 forwards paused;
+  }
+  
+  @keyframes anim2 {
+    0% { transform: translateX(50vw) }
+    100% { transform: translateX(10vw) }
+  }
+
+
+  
+
+
+/* Form */
+
+  #section5 {
+    display: grid;
+    height: 100%;
+    width: auto;
+    place-items: center;
+    text-align: center;
+    background-image: url(seafoam.png);
+    background-size: 100% 100%;
+  }
+
+  #form-moon {
+    position: absolute;
+    top: 10vh;
+    width: 18vmin;
+  }
+
+  .form {
+    width: 60vmin;
+    background: transparent;
+    border: 6px solid rgba(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    position: absolute;
+    left: 7vw;
+  }
+
+  .form .star-widget input {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .star-widget label {
+    font-size: 4vmin;
+    color: rgba( 255,255,255,0.5 );
+    float: right;
+    position: relative;
+    display: contents;
+    transition: all 0.2s ease;
+  }
+  
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label {
+    color: #ffe880;
+  }
+
+  input:checked ~ label {
+    color: rgb(255, 231, 127);
+  }
+
+  input#rate-5:checked ~ label {
+    color: rgb(177, 241, 255);
+    filter: drop-shadow(1px 0px 4px #fffae2);
+  }
+
+  form header {
+    font-size: 3.5vmin;
+    color: #fff;
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 500;
+    margin: 14px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+
+  form .textarea {
+    width: 100%;
+    overflow: hidden;
+    padding: 25px;
+  }
+
+  form .textarea textarea {
+    width: 24vw;
+    outline: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #0A1828;
+    padding: 40px;
+    font-size: 2.8vmin;
+    resize: none;
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+  }
+
+  form .btn button {
+    text-decoration: none;
+    background-color: #fff;
+    color: #036;
+    font-size: 3vmin;
+    border-radius: 60px;
+    padding: 5px 18px;
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 750;
+    border: none;
+    transition: 0.5s;
+  }
+  
+  form .btn button:hover {
+    background-color: #036;
+    border: 0.5px solid #fff;
+    color: #fff;
+    transition: 0.2s;
+  }
+
+
+  /* Footer */
+
+  footer {
+    color: #fff;
+    text-align: center;
+    background-color: #0A1828;
+    height: 9vh;
+  }
+
+  footer img {
+    width: 284px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  footer h4 {
+    font-size: 30px;
+    font-family: 'Cormorant Upright', serif;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  footer h4 a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer h4 a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  footer p {
+    font-size: 30px;
+    font-family: 'Cormorant Upright', serif;
+    padding: 10px;
+  }
+  
+  footer p a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer p a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 1921px) {
+    footer img {
+      width: 230px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    footer h4 {
+      font-size: 20px;
+      font-family: 'Cormorant Upright', serif;
+      padding: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    footer p {
+      font-size: 20px;
+      font-family: 'Cormorant Upright', serif;
+      padding: 5px;
+    }
+  }
+
+  @media screen and (max-width: 1367px) {
+    footer img {
+      width: 167px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    footer h4 {
+      font-size: 15px;
+      font-family: 'Cormorant Upright', serif;
+      padding: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    footer p {
+      font-size: 15px;
+      font-family: 'Cormorant Upright', serif;
+      padding: 4px;
+    }
+  }

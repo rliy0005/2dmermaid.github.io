@@ -1,0 +1,7 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="moon">
+<circle id="outer-2" cx="103.5" cy="100.5" r="82.5" fill="#FFFBEB" fill-opacity="0.25"/>
+<circle id="outer-1" cx="103.5" cy="100.5" r="77.5" fill="#FFFBEB" fill-opacity="0.5"/>
+<circle id="main" cx="103.5" cy="100.5" r="71.5" fill="#FFFBEB"/>
+</g>
+</svg>

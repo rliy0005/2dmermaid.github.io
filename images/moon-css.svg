@@ -1,0 +1,46 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="moon">
+<style>
+* {
+    transform-origin: center center;
+}
+
+#outer-2 {
+    animation: big-glow 3s linear 0s infinite normal none;
+}
+
+#outer-1 {
+    animation: small-glow 3s linear 0s infinite normal none;
+}
+
+@keyframes big-glow{
+    0% {
+        transform:  scale(1);
+    }
+    50% {
+        transform:  scale(1.1);
+    }
+    100% {
+        transform:  scale(1);
+    }
+}
+
+@keyframes small-glow{
+    0% {
+        transform:  scale(1);
+    }
+    50% {
+        transform:  scale(1.08);
+    }
+    100% {
+        transform:  scale(1);
+    }
+}
+
+
+</style>
+<circle id="outer-2" cx="103.5" cy="100.5" r="82.5" fill="#FFFBEB" fill-opacity="0.25"/>
+<circle id="outer-1" cx="103.5" cy="100.5" r="77.5" fill="#FFFBEB" fill-opacity="0.5"/>
+<circle id="main" cx="103.5" cy="100.5" r="71.5" fill="#FFFBEB"/>
+</g>
+</svg>

@@ -1,0 +1,171 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoNaSH The Little Mermaid</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="./lineicons-4.0-basic-free/web-font-files/lineicons.css">
+
+
+</head>
+
+<body>
+
+  <nav>
+    <a href="#header" class="selected"></a>
+    <a href="#sceneone"></a>
+    <a href="#scenetwo"></a>
+    <a href="#scenethree"></a>
+    <a href="#section5"></a>
+  </nav>
+
+
+  <section id="header">
+    <div data-aos="fade-down" id='title-half'>
+      <div id='The'>The</div>
+      <div id='Little'>Little</div>
+    </div>
+    <h1 data-aos="fade-down">Mermaid</h1>
+
+    <img id="logo" src="./images/logo-mark.png"/>
+
+    <!-- <img id="big-fish" src="/images/big-fish.png"/>
+    <img id="medium-fish" src="/images/big-fish.png"/> -->
+    <img id="small-fish" src="/images/big-fish.png"/>
+    <img id="tiny-fish" src="/images/big-fish.png"/>
+
+    <!-- <img id="music-button" src="/images/music-notes-css.svg"> -->
+    <svg id="music-button">
+      <g id="music-notes">
+        <path id="treble-clef" d="M106.533 144.464C104.19 144.171 105.398 137.777 106.064 136.707C107.832 133.866 112.086 131.794 114.973 134.021C119.571 137.568 117.249 146.98 114.589 150.901C112.933 153.341 107.623 153.802 105.084 153.117C99.3575 151.572 96.6138 144.942 96.5589 139.562C96.4765 131.491 100.779 124.284 102.143 116.46C103.16 110.625 103.538 100.379 98.3918 96.1277C93.1587 91.8048 91.7281 101.08 92.0407 104.269C92.4402 108.345 95.1467 112.23 97.1343 115.693C99.3741 119.594 101.849 123.339 104.146 127.201C111.934 140.299 120.122 154.294 121.793 169.698C122.277 174.163 122.122 179.634 119.193 183.295C116.301 186.91 111.04 186.306 107.471 184.063C104.503 182.197 102.028 177.344 103.762 174.003C104.789 172.026 108.631 169.903 110.753 171.318" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        <path id="double-quaver" d="M38.5784 111.237C36.7781 111.237 34.8295 112.017 34.3585 113.901C33.8642 115.878 37.1802 115.586 38.003 114.306C38.2448 113.93 40.3833 110.577 38.7489 110.875C37.5563 111.091 36.5572 112.18 36.298 113.347C35.9592 114.871 39.5881 111.772 39.1325 111.642C37.9744 111.311 38.785 110.071 38.1948 108.743C36.8848 105.796 35.5799 102.785 34.5291 99.7282C33.6727 97.2371 31.6463 95.1752 34.3799 93.3984C38.1466 90.95 42.0831 88.6496 46.1656 86.7703C47.4673 86.1711 48.5774 85.0944 50.0658 85.0013C51.2484 84.9274 51.7849 87.9814 52.0905 88.7736C53.5349 92.5183 56.2786 96.1167 58.5269 99.4298C60.221 101.926 58.4434 101.161 56.2251 102.328C55.2298 102.852 54.1896 105.921 56.2251 105.397C56.7394 105.265 60.7747 102.411 59.1236 101.732C57.8872 101.222 54.6209 105.56 58.058 103.181C58.3104 103.006 59.4417 101.491 58.5055 101.881C57.7618 102.191 57.1671 103.006 56.6087 103.564" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        <path id="minim" d="M132.518 50.7249C129.565 49.8163 126.547 50.4255 124.078 52.2594C122.396 53.5088 120.669 57.269 123.524 58.5252C127.087 60.093 133.858 56.4159 133.264 52.2594C133.058 50.8201 129.755 48.9602 132.902 50.256C133.582 50.5363 133.016 48.9233 132.987 48.7215C132.424 44.8423 132.045 40.9293 131.538 37.0423C130.981 32.7729 130.532 28.4315 129.449 24.2549C129.287 23.6298 128.237 19.0556 129.065 21.9531" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        <path id="quaver" d="M166.76 121.4C165.854 121.453 162.868 123.712 164.458 124.554C166.409 125.587 169.692 124.223 170.191 121.975C170.68 119.777 167.349 120.428 166.377 121.4C166.142 121.634 164.608 122.873 164.927 123.233C165.5 123.877 167.591 123.062 168.124 122.743C168.492 122.522 170.469 121.917 170.021 121.379C169.095 120.267 169.469 117.901 169.232 116.583C167.935 109.354 166.888 102.124 164.927 95.0151C164.866 94.7939 167.316 97.0664 167.911 97.6152C169.365 98.9571 171.504 100.179 173.282 101.068C174.894 101.874 176.009 101.998 177.097 103.561C178.682 105.84 177.765 108.998 177.118 111.426" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        <path id="crotchet" d="M64.1755 30.7349C61.7598 30.7349 57.5384 33.8427 61.8737 34.8695C65.2388 35.6665 69.5462 33.8451 69.5462 30.1595C69.5462 26.6791 62.9517 29.8704 61.6606 30.9267C60.8406 31.5976 59.4248 32.8457 61.1278 33.5908C63.4487 34.6061 65.4603 33.1604 67.2445 31.971C68.9946 30.8043 66.0133 30.6971 65.4116 30.8201C64.8018 30.9449 61.1829 33.0366 63.1951 33.0366C64.3488 33.0366 68.4489 30.4147 67.2445 30.3513C66.4872 30.3114 60.9351 31.6717 62.0869 32.8235C62.9783 33.715 69.1073 32.3669 69.5249 30.9054C69.7312 30.1834 69.2095 28.7259 68.9921 28.0495C68.1886 25.5498 67.2511 23.0898 66.4985 20.5689C65.4258 16.9754 64.7784 13.3143 64.0903 9.63561C63.8935 8.58371 63.4082 3.67777 63.4082 7.33386" stroke="white" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </svg>
+
+    <img data-aos="fade-down" id="header-mermaid" src="/images/header-mermaid-css-v2.svg">
+    <img id="coral" src="/images/coral.svg">
+    <img data-aos="fade-down" id="clam" src="/images/clam.svg">
+
+    <audio id="main-music" src="/media/main-music.mp3" loop></audio>
+
+    <button id="about">About</button>	
+    <div id="particles-js"></div>
+  </section>
+
+
+  <section id="sceneone">
+    <img data-aos="fade-down" id="sceneone-moon" src="/images/moon-css.svg">
+    <div id="ocean"></div>
+    <img data-aos="fade-down" id="sceneone-mermaid" src="/images/rock-mermaid-css.svg">
+    <img data-aos="fade-down" id="sceneone-ship" src="/images/ship-css.svg">
+    <img data-aos="fade-down" id="sceneone-water" src="/images/water-ship-css.svg">
+    <img data-aos="fade-down" id="sceneone-prince" src="/images/prince.png">
+    
+
+    
+
+    <div id="sceneone-card" data-aos="fade-up">Once upon a time, there was a little mermaid princess who lived in an underwater kingdom. 
+      She had the most enchanting voice in the entire world. 
+      <br>After years of dreaming to catch a glimpse of the world above, she courageously swam up to the surface. She saw breathtaking fireworks. It was a lavish birthday celebration for a handsome prince. 
+      To her surprise, she immediately fell in love with him.</div>
+
+    <div id="fireworks-container"></div>
+  </section>
+
+
+  <section id="scenetwo">
+    <div id="particles-js2"></div>
+
+    <img data-aos="fade-down" id="scenetwo-mermaid" src="/images/mermaid-legs-css.svg">
+    <img data-aos="fade-down" id="scenetwo-voice" src="/images/voice-css.svg">
+
+    <div id="scenetwo-card" data-aos="fade-up">Longing for the Prince and an immortal soul, she visited the cave of a Sea Witch in the most dangerous part of the ocean. 
+      She made a daring deal with the Witch. In exchange for a magic potion that would transform her tail into a pair of legs, 
+      the Little Mermaid sold her beautiful voice to the Witch and she became mute. 
+      <br>The Sea Witch warned her becoming human would come at the cost of forever suffering from the pain of losing her tail, 
+      and once human, she would never be able to return to the sea.</div>
+
+
+
+  </section>
+
+
+  <section id="scenethree">
+
+    <img data-aos="fade-down" id="scenethree-mermaid" src="/images/mermaid-flowers-css.svg">
+    <img data-aos="fade-down" id="scenethree-couple" src="/images/couple.svg">
+
+
+
+    <div id="scenethree-card" data-aos="fade-up">But little did she know that the Prince was in love with another. 
+      The Little Mermaid was heartbroken. <br> She cried an ocean of tears until she dissolved into sea foam upon the waves. 
+      The Little Mermaid had returned to her home - the sea.</div>
+
+  </section>
+
+
+  <section id="section5">
+
+    <img data-aos="fade-down" id="form-moon" src="/images/moon-css.svg">
+
+<!-- Title: Star Rating System in HTML CSS & JavaScript | CodingNepal
+Author: CodingMepal
+Date: June 18, 2020
+Availability: https://youtu.be/rw3eZ6XodN8?si=4j5DPpBmS3ff-CMj   -->
+
+    <div data-aos="fade-down" class="form">
+      <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="lni lni-star-fill"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="lni lni-star-fill"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="lni lni-star-fill"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="lni lni-star-fill"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="lni lni-star-fill"></label>
+
+        <form action="#">
+          <header>What did you think of our website?</header>
+          <div class="textarea">
+            <textarea id ="text" cols="30" placeholder="What other stories would you like to see?"></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <footer>
+
+    <div>
+      <img src="./images/full-logo.png">
+      <h4><a href="index.html">Back to Top</a></h4>
+      <p><a href="page2.html">Privacy Policy</a> | <a href="page2.html">Terms &amp; Conditions</a> &copy; 2023 MoNaSH. All rights reserved.
+    </div>
+  </footer>
+
+
+  <!-- <script src="https://unpkg.com/@rive-app/canvas"></script> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript" src="js/particles.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script src="https://unpkg.com/fireworks-js@2.10.7/dist/index.umd.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
